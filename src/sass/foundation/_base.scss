@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  @extend %grid;
   font-size: 100%;
 }
 
