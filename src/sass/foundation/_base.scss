@@ -12,11 +12,13 @@ html {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+  word-break: break-all;
 }
 
 body {
-  @extend %grid;
   font-size: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -118,6 +120,7 @@ cite {
 
 img,
 picture {
+  height: auto;
   margin: 0;
   max-width: 100%;
 }

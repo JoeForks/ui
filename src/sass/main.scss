@@ -18,7 +18,7 @@ $use-grid: true;
 	// Grid Settings
 	$use-silent-classes: true;
 	$pull: true;
-	@import '../../bower_components/csswizardry-grids/csswizardry-grids.scss';
+	//@import '../../bower_components/csswizardry-grids/csswizardry-grids.scss';
 }
 
 /********************
@@ -26,7 +26,6 @@ $use-grid: true;
 	-> Not the Zurb kind
 ********************/
 
-@import '../../bower_components/normalize.css/normalize.css';
 @import 'foundation/helpers';
 @import 'foundation/config';
 @import 'foundation/base';
@@ -40,8 +39,19 @@ $use-grid: true;
 
 // Button Styles
 @import 'components/buttons';
-@import 'components/header';
 
+// Profile Block
+@import 'components/profile';
+
+/*********************
+	Layout
+	-> Defined Layers / Partials Classes
+*********************/
+
+// Header Layer
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/content';
 
 /********************
 	Inbox

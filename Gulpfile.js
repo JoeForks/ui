@@ -15,7 +15,7 @@ var paths = {
 };
 
 // Required vendor files for use in the static site.
-var vendors = ['bower_components/jquery/dist/jquery.min.js'];
+var vendors = ['bower_components/jquery/dist/jquery.min.js', 'bower_components/normalize.css/normalize.css'];
 
 // Files paths to be used while serving the static site.
 var serve = {
@@ -71,7 +71,7 @@ gulp.task('default', ['styles','vendor','serve', 'watch']);
 
 // Build task compiles styles, minimizes the file, renames it, and places it in the dist folder.
 gulp.task('build', function(){
-    return gulp.src(paths.scss.all)
+    return gulp.src(paths.scss.main)
         .pipe(sass())
         .pipe(autoprefix())
         .pipe(minifyCSS({

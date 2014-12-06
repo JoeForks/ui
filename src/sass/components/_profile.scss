@@ -1,0 +1,28 @@
+// Profile Block Component
+
+.profile-container {
+  @extend %clearfix;
+  display: block;
+  padding: $base-spacing;
+}
+
+.profile-img, .profile-info {
+  float: left;
+}
+
+.profile-img {
+  @include size(3em);
+  border-radius: 100%;
+  display: block;
+  overflow: hidden;
+
+  img {
+    @include size(100%);
+  }
+}
+
+.profile-info {
+  display: block;
+  padding-left: $base-spacing;
+  width: 65%;
+}
